@@ -7,14 +7,14 @@ Designed a robot inside a gazebo world and implemented a white ball chaser plugi
 
 ## Install Details
 
-First check for any package updates.
-`$ sudo apt-get update`
+First check for any package updates.  
+`$ sudo apt-get update `
 
-Then install the ROS kinetic package
-`$ sudo apt-get install ros-kinetic-desktop`
+Then install the ROS kinetic package.  
+`$ sudo apt-get install ros-kinetic-desktop `
 
-Once the package is upto date, change the directory.
-`$ cd ~/workspace/catkin_ws/`
+Once the package is upto date, change the directory.  
+`$ cd ~/workspace/catkin_ws/ `
 
 And run the ROS package world via my_robot.
 ```
