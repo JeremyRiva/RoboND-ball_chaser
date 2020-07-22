@@ -1,4 +1,5 @@
 # ball chaser ROS plugin
+[![Udacity Robotics NanoDegree](https://img.shields.io/badge/Udacity-RoboND-blue.svg?logo=udacity)](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 ## Outline
 
