@@ -1,12 +1,38 @@
 # ball chaser ROS plugin
-[![Udacity Robotics NanoDegree](https://img.shields.io/badge/Udacity-RoboND-blue.svg?logo=udacity)](https://www.udacity.com/course/robotics-software-engineer--nd209)
+[![Udacity Robotics NanoDegree](https://img.shields.io/badge/Udacity-RoboND-blue.svg?logo=udacity&link=http://left)](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 ## Outline
 
 Designed a robot inside a gazebo world and implemented a white ball chaser plugin.
 
-## Structure
+## Install Details
 
+First check for any package updates.
+`$ sudo apt-get update`
+
+Then install the ROS kinetic package
+`$ sudo apt-get install ros-kinetic-desktop`
+
+Once the package is upto date, change the directory.
+`$ cd ~/workspace/catkin_ws/`
+
+And run the ROS package world via my_robot.
+```
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch my_robot myworld.world
+```
+
+In a new terminal (ctrl + shift + t) then run the ball chase node.
+```
+$ catkin_make
+$ source devel/setup.bash
+$ roslaunch ball_chaser ball_chaser.launch
+```
+Move the white ball in front of the robot and it should start following it.
+## Structure Overview
+
+Below the structure of the files is shown.
 ```
     ├── my_robot                       # my_robot package                   
     │   ├── launch                     # launch folder for launch files   
@@ -17,8 +43,8 @@ Designed a robot inside a gazebo world and implemented a white ball chaser plugi
     │   ├── urdf                       # urdf folder for xarco files
     │   │   ├── my_robot.gazebo
     │   │   ├── my_robot.xacro
-    │   ├── world                      # world folder for world files
-    │   │   ├── <yourworld>.world
+    │   ├── worlds                     # world folder for world files
+    │   │   ├── myworld.world
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info
     ├── ball_chaser                    # ball_chaser package                   
