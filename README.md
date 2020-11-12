@@ -17,17 +17,23 @@ First check for any package updates.
 Then install the ROS kinetic package.  
 `$ sudo apt-get install ros-kinetic-desktop `
 
-Once the package is upto date, change the directory.  
-`$ cd ~/workspace/catkin_ws/ `
+Once the package is upto date, create the catkin_ws.  
+```
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+$ catkin_init_workspace
+$ cd ../
+$ catkin_make
+```
 
-And run the ROS package world via my_robot.
+Clone the packages and run the ROS package "my_robot".
 ```
 $ catkin_make
 $ source devel/setup.bash
 $ roslaunch my_robot world.launch
 ```
 
-In a new terminal (ctrl + shift + t) then run the ball chase node.
+In a new terminal run the "ball_chaser" package.
 ```
 $ catkin_make
 $ source devel/setup.bash
@@ -38,7 +44,7 @@ Move the white ball in front of the robot and it should start following it.
 
 Below the structure of the files is shown.
 ```
-    ├── my_robot                       # my_robot package                   
+    ├── my_robot                       # my_robot package   
     │   ├── launch                     # launch folder for launch files   
     │   │   ├── robot_description.launch
     │   │   ├── world.launch
@@ -51,7 +57,7 @@ Below the structure of the files is shown.
     │   │   ├── myworld.world
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info
-    ├── ball_chaser                    # ball_chaser package                   
+    ├── ball_chaser                    # ball_chaser package   
     │   ├── launch                     # launch folder for launch files   
     │   │   ├── ball_chaser.launch
     │   ├── src                        # source folder for C++ scripts
