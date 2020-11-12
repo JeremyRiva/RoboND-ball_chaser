@@ -5,6 +5,10 @@
 
 Designed a robot inside a gazebo world and implemented a white ball chaser plugin.
 
+<div align="center">
+    <img src="ballchaser-plugin.gif" width="800">
+</div>
+
 ## Install Details
 
 First check for any package updates.  
