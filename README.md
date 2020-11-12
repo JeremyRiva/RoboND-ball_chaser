@@ -1,4 +1,4 @@
-# ball chaser ROS plugin
+# Ball chaser ROS plugin
 [![Udacity Robotics NanoDegree](https://img.shields.io/badge/Udacity-RoboND-blue.svg?logo=udacity&link=http://left)](https://www.udacity.com/course/robotics-software-engineer--nd209)
 
 ## Outline
@@ -24,7 +24,7 @@ And run the ROS package world via my_robot.
 ```
 $ catkin_make
 $ source devel/setup.bash
-$ roslaunch my_robot myworld.world
+$ roslaunch my_robot world.launch
 ```
 
 In a new terminal (ctrl + shift + t) then run the ball chase node.
