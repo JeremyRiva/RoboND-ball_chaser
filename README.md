@@ -3,7 +3,7 @@
 
 ## Outline
 
-Designed a robot inside a gazebo world and implemented a white ball chaser plugin. The plugin searches for white pixels within the array and identifies its position with respect to the camera (left, centre, right). As a result the robot moves either left, forward or rigth.
+Designed a robot inside a gazebo world and implemented a white ball chaser plugin. The plugin searches for white pixels within the array and identifies its position with respect to the camera (left, centre, right). As a result the robot moves either left, forward or right.
 
 <div align="center">
     <img src="ballchaser-plugin.gif" width="600">
