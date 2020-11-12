@@ -44,6 +44,8 @@ Move the white ball in front of the robot and it should start following it.
 
 Below the structure of the files is shown.
 ```
+catkin_ws/src
+    │
     ├── my_robot                       # my_robot package   
     │   ├── launch                     # launch folder for launch files   
     │   │   ├── robot_description.launch
@@ -57,6 +59,7 @@ Below the structure of the files is shown.
     │   │   ├── myworld.world
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info
+    │
     ├── ball_chaser                    # ball_chaser package   
     │   ├── launch                     # launch folder for launch files   
     │   │   ├── ball_chaser.launch
